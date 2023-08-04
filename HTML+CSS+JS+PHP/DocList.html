@@ -1,0 +1,181 @@
+<html>
+
+<head>
+  <title>DAS</title>
+  <link rel="stylesheet" href="CSS\mystyle.css">
+  <link rel="stylesheet" href="CSS\DocList.css">
+  <script src="JavaScript/DocList.js" async></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+  <script src="JavaScript/PHP.js" defer></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .loginPopup {
+      position: relative;
+      text-align: center;
+      width: 100%;
+    }
+
+    .formPopup {
+      display: none;
+      position: fixed;
+      left: 45%;
+      top: 5%;
+      transform: translate(-50%, 5%);
+      border: 3px solid #999999;
+      z-index: 9;
+    }
+
+    .formContainer {
+      max-width: 300px;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .formContainer input[type=text],
+    .formContainer input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 20px 0;
+      border: none;
+      background: #eee;
+    }
+
+    .formContainer input[type=text]:focus,
+    .formContainer input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    .formContainer .btn {
+      padding: 12px 20px;
+      border: none;
+      background-color: #8ebf42;
+      color: #fff;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 15px;
+      opacity: 0.8;
+    }
+
+    .formContainer .cancel {
+      background-color: #cc0000;
+    }
+
+    .formContainer .btn:hover,
+    .openButton:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="bg_image"></div>
+
+  <div class="navbar">
+    <font size="8">DOCTOR APPOINMENT SYSTEM</font>
+
+  </div>
+
+  <div class="loginPopup">
+    <div class="formPopup" id="popupForm">
+
+      <label for="email">
+        <strong>E-mail</strong>
+      </label>
+
+      <button type="submit" class="btn" onclick="openform(this.id)">Book</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+    </div>
+  </div>
+
+
+
+  <div class="tab">
+    <button class="tablinks" id="d1" onclick="dateb(this.id)"></button>
+    <button class="tablinks" id="d2" onclick="dateb(this.id)"></button>
+    <button class="tablinks" id="d3" onclick="dateb(this.id)"></button>
+    <button class="tablinks" id="d4" onclick="dateb(this.id)"></button>
+    <button class="tablinks" id="d5" onclick="dateb(this.id)"></button>
+    <button class="tablinks" id="d6" onclick="dateb(this.id)"></button>
+    <button class="tablinks" id="d7" onclick="dateb(this.id)"></button>
+  </div>
+  <p class="demo" id="demo" style="color:red;"></p>
+  <div class="tab1">
+    <button class="tablinks" id="tb1" onclick="timeb(this.id)" disabled>9 - 10 am</button>
+    <button class="tablinks" id="tb2" onclick="timeb(this.id)" disabled>10 - 11 am</button>
+    <button class="tablinks" id="tb3" onclick="timeb(this.id)" disabled>12 - 1 pm</button>
+    <button class="tablinks" id="tb4" onclick="timeb(this.id)" disabled>1 - 2 pm</button>
+  </div>
+
+
+  <div class="list">
+
+    <div class="dlist">
+      <div class="doc1">DocId:<p id="doc01" style="color:red;"></p>
+      </div>
+      <div class="doc1">Name:<p id="doc02" style="color:red;"></p>
+      </div>
+      <div class="doc1">Age:<p id="doc03" style="color:red;"></p>
+      </div>
+      <div class="doc1">Experience:<p id="doc04" style="color:red;"></p>
+      </div>
+      <button class="doc" id="bookbtn0" onclick="openform(this.id)">Book</button>
+    </div>
+    <div class="dlist">
+      <div class="doc1">DocId:<p id="doc11" style="color:red;"></p>
+      </div>
+      <div class="doc1">Name:<p id="doc12" style="color:red;"></p>
+      </div>
+      <div class="doc1">Age:<p id="doc13" style="color:red;"></p>
+      </div>
+      <div class="doc1">Experience:<p id="doc14" style="color:red;"></p>
+      </div>
+      <button class="doc" id="bookbtn1" onclick="openform(this.id)">Book</button>
+    </div>
+    <div class="dlist">
+      <div class="doc1">DocId:<p id="doc21" style="color:red;"></p>
+      </div>
+      <div class="doc1">Name:<p id="doc22" style="color:red;"></p>
+      </div>
+      <div class="doc1">Age:<p id="doc23" style="color:red;"></p>
+      </div>
+      <div class="doc1">Experience:<p id="doc24" style="color:red;"></p>
+      </div>
+      <button class="doc" id="bookbtn2" onclick="openform(this.id)">Book</button>
+    </div>
+    <div class="dlist">
+      <div class="doc1">DocId:<p id="doc31" style="color:red;"></p>
+      </div>
+      <div class="doc1">Name:<p id="doc32" style="color:red;"></p>
+      </div>
+      <div class="doc1">Age:<p id="doc33" style="color:red;"></p>
+      </div>
+      <div class="doc1">Experience:<p id="doc34" style="color:red;"></p>
+      </div>
+      <button class="doc" id="bookbtn3" onclick="openform(this.id)">Book</button>
+    </div>
+    <div class="dlist">
+      <div class="doc1">DocId:<p id="doc41" style="color:red;"></p>
+      </div>
+      <div class="doc1">Name:<p id="doc42" style="color:red;"></p>
+      </div>
+      <div class="doc1">Age:<p id="doc43" style="color:red;"></p>
+      </div>
+      <div class="doc1">Experience:<p id="doc44" style="color:red;"></p>
+      </div>
+      <button class="doc" id="bookbtn4" onclick="openform(this.id)">Book</button>
+    </div>
+
+
+  </div>
+
+  </bo dy>
+
+</html>

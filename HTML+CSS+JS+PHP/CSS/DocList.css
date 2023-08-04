@@ -1,0 +1,80 @@
+
+.tab {
+  overflow: hidden;
+  position: absolute;
+  border: 1px solid #ccc;
+  background-color: #ddd;
+  top: 150px;
+  left: 80px;
+}
+
+.tab1 {
+  overflow: hidden;
+  position: absolute;
+  border: 1px solid #ccc;
+  background-color: #ddd;
+  top: 200px;
+  left: 80px;
+}
+
+.tablinks{
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab1 button:hover {
+  background-color: #ddd;
+}
+
+.list{
+  position: absolute;
+  border: 1px solid #ccc;
+  background-color: #D3D3D3;
+  top: 290px;
+left: 80px;}
+
+.dlist{
+	 background-color: inherit;
+	width:900px;
+	height:70px;
+border-style: ridge;
+
+ display: flex;
+
+ 
+  
+
+  font-size: 17px;
+}	
+.doc {
+
+	background-color: #5A5A5A;
+	color: white;
+  cursor: pointer;
+    width:18%;
+	float:right;
+	border-style: ridge;
+}
+
+.p{
+top:250px;}
+
+.demo{
+	position:absolute;
+	top: 205px;
+	left: 550px;
+}
+
+.doc1{
+width:30%;}
+

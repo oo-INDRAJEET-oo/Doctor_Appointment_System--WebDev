@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+.bg_image{
+background-image: url("1.jpg");
+filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+width: auto;  
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar{
+position: absolute;
+top:0px;
+left: 0px;
+width: 100%;
+border: 3px solid #f1f1f1;
+height:100px;
+justify-content:center;
+ display:flex;
+ align-items: center;
+ background-color: #616161;color: white;
+  font-weight: bold;
+}
+
+.wrapper1 {
+	position: absolute;
+	top: 130px;
+	left: 20px;
+	
+            width: 105%;
+			height: 20%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+		
+		.wrapper2 {
+	position: absolute;
+	top: 130px;
+	left: 340px;
+            width: 100%;
+			height: 20%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+		
+		.wrapper3 {
+	position: absolute;
+	top: 130px;
+	left: 660px;
+            width: 100%;
+			height: 20%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+		.wrapper4 {
+	position: absolute;
+	top: 130px;
+	left: 980px;
+            width: 100%;
+			height: 20%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: white;
+            width: 20%;
+			height:180%;
+            margin-right: 10px;
+            padding-bottom: 5px;
+        }
+ 
+        .title {
+            flex: 1;cursor: pointer;
+        }
+
+        .heading {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+        }
+
+        .card h1 {
+            padding-bottom: 0px;
+            border-bottom: rgba(0,0,0, 0.4) solid 3px;
+        }
+
+        .pi{
+            height: 70%;
+            width: 50%;
+            margin: 2%;
+        }
+		
+		.ci{
+            height: 70%;
+            width: 80%;
+            margin: 2%;
+        }
+		.oi{
+            height: 70%;
+            width: 80%;
+            margin: 2%;
+        }
+		.oni{
+            height: 70%;
+            width: 80%;
+            margin: 2%;
+        }
+	
+	.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.wrapper5 {
+	position: absolute;
+	top: 350px;
+	left: 20px;
+            width: 105%;
+			height: 20%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+		
+		.wrapper6 {
+	position: absolute;
+	top: 350px;
+	left: 340px;
+            width: 100%;
+			height: 20%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+		
+		.wrapper7 {
+	position: absolute;
+	top: 350px;
+	left: 660px;
+            width: 100%;
+			height: 20%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+		.wrapper8 {
+	position: absolute;
+	top: 350px;
+	left: 980px;
+            width: 100%;
+			height: 20%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+  
+
+
+
+
+	

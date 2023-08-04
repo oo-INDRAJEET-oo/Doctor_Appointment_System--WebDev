@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <title>DAS</title>
+    <link rel="stylesheet" href="CSS\app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="bg_image"></div>
+
+    <div class="navbar">
+        <font size="8">DOCTOR APPOINMENT SYSTEM</font>
+    </div>
+
+
+
+    <div class="wrapper1">
+        <div class="card">
+            <div class="heading">
+                <div class="title" id='pediatrics' onclick='opendoc(this.id)'>
+                    <h1>PEDIATRICS</h1>
+                </div>
+                <div class="image">
+                    <img class="pi" src="CSS\Images\pedia.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper2">
+        <div class="card">
+            <div class="heading">
+                <div class="title" id='cardiology' onclick='opendoc(this.id)'>
+                    <h1>CARDIOLOGY</h1>
+                </div>
+                <div class="image">
+                    <img class="ci" src="CSS\Images\cardio.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper3">
+        <div class="card">
+            <div class="heading">
+                <div class="title" id='orthopedics' onclick='opendoc(this.id)'>
+                    <h1>ORTHOPEDICS</h1>
+                </div>
+                <div class="image">
+                    <img class="oi" src="CSS\Images\ortho.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper4">
+        <div class="card">
+            <div class="heading">
+                <div class="title" id='oncology' onclick='opendoc(this.id)'>
+                    <h1>ONCOLOGY</h1>
+                </div>
+                <div class="image">
+                    <img class="oni" src="CSS\Images\onco.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wrapper5">
+        <div class="card">
+            <div class="heading">
+                <div class="title" id='dermatology' onclick='opendoc(this.id)'>
+                    <h1>DERMATOLOGY</h1>
+                </div>
+                <div class="image">
+                    <img class="pi" src="CSS\Images\derma.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper6">
+        <div class="card">
+            <div class="heading">
+                <div class="title" id='dentistry' onclick='opendoc(this.id)'>
+                    <h1>DENTISTRY</h1>
+                </div>
+                <div class="image">
+                    <img class="ci" src="CSS\Images\dent.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper7">
+        <div class="card">
+            <div class="heading">
+                <div class="title" id='neurology' onclick='opendoc(this.id)'>
+                    <h1>NEUROLOGY</h1>
+                </div>
+                <div class="image">
+                    <img class="oi" src="CSS\Images\neuro.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper8">
+        <div class="card">
+            <div class="heading">
+                <div class="title" id='immunology' onclick='opendoc(this.id)'>
+                    <h1>IMMUNOLOGY</h1>
+                </div>
+                <div class="image">
+                    <img class="oni" src="CSS\Images\immuno.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function opendoc(clicked_id) {
+            url = 'DocList.html?name=' + encodeURIComponent(clicked_id);
+
+            document.location.href = url;
+        }
+    </script>
+
+</body>
+
+</html>
