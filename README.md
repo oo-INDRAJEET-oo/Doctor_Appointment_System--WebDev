@@ -1,5 +1,5 @@
 # Doctor_Appointment_System--WebDev_Project
-To create a Doctor Appointment System using HTML, CSS, JavaScript, PHP, and SQl.
+To create a Doctor Appointment System using HTML, CSS, JavaScript, PHP, and SQL.
 
 End-Semester Project of my Internet Programming course.
 
